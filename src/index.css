@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-agri-green-50: #f0fdf4;
+  --color-agri-green-100: #dcfce7;
+  --color-agri-green-200: #bbf7d0;
+  --color-agri-green-300: #86efac;
+  --color-agri-green-400: #4ade80;
+  --color-agri-green-500: #22c55e;
+  --color-agri-green-600: #16a34a;
+  --color-agri-green-700: #15803d;
+  --color-agri-green-800: #166534;
+  --color-agri-green-900: #14532d;
+  --color-agri-green-950: #052e16;
+}
+
+body {
+  @apply bg-agri-green-50 text-agri-green-950 antialiased;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl rounded-2xl;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--color-agri-green-600) 0%, var(--color-agri-green-800) 100%);
+}
